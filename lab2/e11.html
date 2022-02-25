@@ -1,0 +1,46 @@
+<html lang="en">
+
+<head>
+	
+	<style>
+	
+</style>
+</head>
+
+<body>
+
+
+
+</body>
+<script type='text/javascript' src='https://d3js.org/d3.v7.min.js'></script>
+<script>
+	d3.select('body')
+	.append("svg").style('width', '400px').style('height', '300px');
+	d3.select("svg").append("text").attr("x",100).attr("y",100).text("mouseover here").style("font-size","20");
+
+	d3.select("text").on('mouseover', function(event){
+		d3.select(this)
+		.style('transform', 'scale(1.0)')
+		.transition()
+		.ease( d3.easeBounce )
+		.duration(1000)
+		.style("font-size", "30")
+		.style('fill',"red")
+		.style('transform', 'scale(1.0)');
+		
+	});
+	d3.select("text").on('mouseout', function(event){
+		d3.select(this)
+		.style('transform', 'scale(1.0)')
+		.transition()
+		.ease( d3.easeBounce )
+		.duration(1000)
+		.style("font-size", "20")
+		.style('fill',"black")
+		.style('transform', 'scale(1.0)');
+	});
+	
+
+	
+</script>
+</html>

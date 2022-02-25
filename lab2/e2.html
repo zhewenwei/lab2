@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+	
+	<style>
+	
+</style>
+</head>
+
+<body>
+
+
+</body>
+<script type='text/javascript' src='https://d3js.org/d3.v7.min.js'></script>
+<script>
+	let flag = 0;
+		
+		d3.select('body').append('span').text("hello world").style('display', 'block')
+		.on('mouseover', function(event){
+			if (flag ==0) {
+				d3.select('body').append('div').text("hidden text~").style('color','green');
+				flag =1;
+			} else {
+				d3.select('div').style('display', 'block');
+			}
+			
+		})
+		.on('mouseout', function(event){
+			d3.select('div').style('display', 'none');
+		})
+		
+	</script>
+</html>

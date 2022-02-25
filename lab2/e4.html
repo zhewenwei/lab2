@@ -1,0 +1,29 @@
+<html lang="en">
+
+<head>
+	
+	<style>
+	
+</style>
+</head>
+
+<body>
+
+
+</body>
+<script type='text/javascript' src='https://d3js.org/d3.v7.min.js'></script>
+<script>
+	d3.select('body').append('svg').style('width','500').style('height','500');
+	d3.select('svg').append('circle').style('cx', '50').style('cy', '50')
+		.style('r', '20').style('fill','red');
+
+	d3.selectAll("circle").on("mouseover", function(event){
+	d3.select(this).style("r", "40").style('fill','pink');
+	})
+	.on("mouseout", function(){
+		d3.select(this)
+		.style("r", "20").style('fill','red');
+});
+		
+	</script>
+</html>

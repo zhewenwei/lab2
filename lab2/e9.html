@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+	
+	<style>
+	
+</style>
+</head>
+
+<body>
+
+
+
+</body>
+<script type='text/javascript' src='https://d3js.org/d3.v7.min.js'></script>
+<script>
+	d3.select('body')
+	.append("div")
+	.style('width', '100px')
+	.style('height', '100px')
+	.style('background-color', 'blue')
+	.style('transform', 'scale(1.0)')
+	.transition()
+	.ease( d3.easeBounce )
+	.duration(1000)
+	.style("background-color", "red")
+	.style('transform', 'scale(0.5)');
+
+	d3.select('body')
+	.append("div")
+	.style('width', '100px')
+	.style('height', '100px')
+	.style('background-color', 'blue')
+	.style('transform', 'scale(1.0)')
+	.transition()
+	.ease( d3.easeElasticIn )
+	.duration(1000)
+	.style("background-color", "red")
+	.style('transform', 'scale(0.5)');
+
+	d3.select('body')
+	.append("div")
+	.style('width', '100px')
+	.style('height', '100px')
+	.style('background-color', 'blue')
+	.style('transform', 'scale(1.0)')
+	.transition()
+	.ease( d3.easeCircleIn )
+	.duration(1000)
+	.style("background-color", "red")
+	.style('transform', 'scale(0.5)');
+	
+</script>
+</html>

@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+	
+	<style>
+	
+</style>
+</head>
+
+<body>
+
+
+
+</body>
+<script type='text/javascript' src='https://d3js.org/d3.v7.min.js'></script>
+<script>
+	d3.select('body').append('svg').style('width','600').style('height','600');
+	
+	d3.select('svg').on('mousemove', function(event){
+		d3.select('text').remove();
+		let x = d3.pointer(event)[0];
+		let y = d3.pointer(event)[1];
+		d3.select(this).append('text').attr('x',x).attr('y',y).style('height','30');
+		d3.select('text').text('test');
+	});
+
+
+	// d3.select('svg').append('circle').style('cx', '50').style('cy', '50')
+	// 	.style('r', '20').style('fill','red');
+
+	// d3.selectAll("circle").on("mouseover", function(event){
+	// d3.select(this).style("r", "40").style('fill','pink');
+	// })
+	// .on("mouseout", function(){
+	// 	d3.select(this)
+	// 	.style("r", "20").style('fill','red');
+// });
+		
+	</script>
+</html>

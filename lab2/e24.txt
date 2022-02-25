@@ -1,0 +1,7 @@
+output:
+Type of returned function is:  function
+[16.2, 34.4, 5.2]
+
+
+Because the intr method parameter is 0.2, that is, the number at 0.2 between the two arrays is output. 
+that is [16.2, 34.4, 5.2]

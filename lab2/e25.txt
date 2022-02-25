@@ -1,0 +1,5 @@
+interpolated color value:rgb(128, 64, 0)
+
+Because the red color code is(255,0,0)
+and green color code is (0, 128,0)
+so Interpolate with parameter 0.5 is(128, 64, 0)
